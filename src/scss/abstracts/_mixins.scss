@@ -1,0 +1,49 @@
+@import "variables";
+
+
+@mixin card-style {
+    .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        width: calc(100% - 20px); 
+        margin: 20px 10px; 
+
+        &__content {
+            padding: 20px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        &__metadata {
+            color: #aaa;
+        }
+
+        &__metadata-text {
+            font-size: 1em;
+            color: $primary-color;
+        }
+
+        @media (min-width: 600px) { 
+            width: calc(50% - 20px); 
+        
+        }
+
+
+        @media (min-width: 998px) { 
+            width: calc(30% - 10px);
+        }
+
+
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

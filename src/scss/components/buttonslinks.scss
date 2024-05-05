@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+
+button {
+    color:white;
+
+    &:active {
+        background-color: $secondary-color;
+    }
+}
+
+
+
+
+button a {
+    color:white;
+}
+
+
+a{
+    &:active {
+        color: $secondary-color
+    }
+}

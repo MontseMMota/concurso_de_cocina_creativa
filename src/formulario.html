@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Formulario para el concurso de cocina creativa de las fiestas de Cornellá de Llobregat">
+    <title>Formulario para el concurso de cocina creativa</title>
+    <link rel="icon" href="../src/assets/images/Logo.png" type="image/x-icon">
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="scss/styles.scss">
+    <link rel="stylesheet" href="../src/scss/styles.css">
+</head>
+<body>
+    <div class="container">
+        <include src="./views/header.html"></include>
+      </div>
+      <main class="container-fluid ">
+          <h1 class="mb-5 text-center">¡Apúntate ahora y muestra tu creatividad en nuestro concurso de cocina!</h1>
+          <h3 class="mb-4 text-center">Rellena el siguiente formulario y pronto nos pondremos en contacto contigo</h3>
+          <div class="card p-4 flex mx-auto  w-75 form-container">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputName" placeholder="Nombre*" required aria-describedby="nameHelp">
+              <div class="valid-feedback">Validación correcta</div>
+              <div class="invalid-feedback">Por favor, escribe tu nombre</div>
+            </div>
+      
+      <div class="mb-3">
+        <label for="exampleInputLastName" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="exampleInputLastName" placeholder="Apellido*" required aria-describedby="lastNameHelp">
+        <div class="valid-feedback">Validación correcta</div>
+        <div class="invalid-feedback">Por favor, escribe tu apellido</div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleInputMobile" class="form-label">Móvil</label>
+        <input type="tel" class="form-control" id="exampleInputMobile" placeholder="Número de móvil*" required aria-describedby="mobileHelp">
+        <div class="valid-feedback">Validación correcta</div>
+        <div class="invalid-feedback">Por favor, introduce tu número de móvil</div>
+      </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*" required aria-describedby="emailHelp">
+          <div class="valid-feedback">Validación correcta</div>
+          <div class="invalid-feedback">Por favor, escribe tu correo</div>
+        </div>
+      
+      
+        <button type="submit" class="btn p-2  btn-primary  mb-3">Submit</button>
+      </form>
+        </div>
+    </main>
+    <include src="./views/footer.html"></include>
+      <script src="js/bootstrap.bundle.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>

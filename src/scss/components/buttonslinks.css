@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+button {
+  color: white;
+}
+button:active {
+  background-color: rgb(219, 15, 15);
+}
+
+button a {
+  color: white;
+}
+
+a:active {
+  color: rgb(219, 15, 15);
+}/*# sourceMappingURL=buttonslinks.css.map */

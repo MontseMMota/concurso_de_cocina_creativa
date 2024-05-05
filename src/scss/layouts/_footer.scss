@@ -1,0 +1,82 @@
+@import "../abstracts/variables";
+
+
+
+.footer {
+  margin-top: 2em;
+  padding: 30px 10px;
+  text-align: center;
+  background-color: $secondary-color;
+  color: white;
+
+  @media (min-width: 768px) {
+      text-align: left; 
+  }
+
+  .footer__container {
+      display: flex;
+      flex-direction: column; // Apilamos los elementos en columna por defecto
+
+      @media (min-width: 768px) {
+          flex-direction: row; // Mostramos los elementos en fila a partir de tablet
+          justify-content: space-between; // Distribuimos los elementos a los extremos
+          align-items: center; // Centramos verticalmente los elementos
+      }
+  }
+
+  .footer__contact {
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+          margin-bottom: 0; // Eliminamos el margen inferior a partir de tablet
+          margin-right: 20px; // Añadimos margen derecho a partir de tablet
+      }
+  }
+
+  .footer__links {
+      margin-top: 20px; // Añadimos margen superior por defecto
+
+      @media (min-width: 768px) {
+          margin-top: 0; // Eliminamos el margen superior a partir de tablet
+          margin-left: auto; // Mover a la derecha a partir de tablet
+          margin-right: 20px; // Añadimos margen derecho a partir de tablet
+          text-align: right; // Alineamos el texto a la derecha a partir de tablet
+      }
+
+      .footer__list {
+          display: flex;
+          flex-direction: row; 
+          justify-content: space-around;
+          align-items: center;
+          list-style: none;
+
+          @media (min-width: 768px) {
+            flex-direction: column; 
+              align-items: end; 
+          }
+      }
+
+      .footer__item {
+          margin-bottom: 10px;
+
+          @media (min-width: 768px) {
+      
+              display: inline-block; // Mostramos los elementos en línea a partir de tablet
+          }
+      }
+
+      .footer__link {
+          text-decoration: none;
+          color:white;
+
+          &:hover {
+              text-decoration: underline;
+          }
+      }
+  }
+
+
+  .footer__info {
+      margin-bottom: 5px;
+  }
+}

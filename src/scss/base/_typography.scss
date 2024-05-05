@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+h1,h2,h3,h4,h5 {
+    font-family: $font-family-title;
+}
+
+
+h1 {
+    font-weight: bold;
+}
+
+p{
+    font-family: $font-family-text;
+}
+
+
+
+.capitular::first-letter {
+font-size: typo(large);
+font-weight: bold;
+ }

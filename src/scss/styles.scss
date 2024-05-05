@@ -1,0 +1,27 @@
+
+@layer bootstrap, components, layout;
+@import "base/reset";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "layouts/header";
+@import "layouts/cards";
+@import "layouts/home";
+@import "layouts/infoblog";
+@import "layouts/formulario";
+@import "layouts/footer";
+
+@import "base/typography";
+@import "components/buttonslinks.scss";
+
+
+@layer bootstrap {
+    @import "bootstrap/scss/bootstrap.scss";
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+$typosize: 16px;
+
+@function typo($size: normal) {
+  @if $size == large {
+    @return $typosize * 2; 
+  }
+
+  @if $size == normal {
+    @return $typosize;
+  }
+
+  @if $size == small {
+    @return $typosize * 0.9;
+  }
+}

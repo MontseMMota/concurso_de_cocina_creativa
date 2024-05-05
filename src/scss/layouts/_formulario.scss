@@ -1,0 +1,61 @@
+@layer components {
+    .form-container {
+        background-image: linear-gradient(
+            to right
+            in oklch,
+            lch(80% 103.24 130.45),
+            lch(70% 100 50)
+        );
+
+
+        @media (min-width: 786px) {
+            width: 50% !important; 
+        }
+    }
+
+    
+    form {
+        container: formulario / inline-size;
+        height: 60cqh;
+        
+
+        @media (min-width: 786px) {
+            height: 80cqh; 
+        }
+        
+    }
+
+    label {
+        margin-bottom: 1em;
+    }
+
+    input,
+    label,
+    button {
+        margin-top: 0.3em !important; 
+
+    }
+
+    input {
+        padding: 0.5em !important;
+    }
+
+    @container formulario (min-width: 300px) {
+        .form-label {
+            font-size: max(1em, 1.13em + 1.2cqw); 
+            margin-bottom: 4cqh; 
+        }
+
+        .form-input {
+            width: 100%; 
+            max-width: 100%;
+            margin-top: 5cqh; 
+            margin-bottom: 5cqh; 
+        }
+
+        .form-submit {
+            max-width: cqmax(200px, 50cqi); 
+            padding: 1cqh 2cqi; 
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$font-family-title: 'Roboto', sans-serif;
+$font-family-text: "Open Sans", sans-serif;
+
+
+
+
+
+$theme-colors: (
+  "primary": rgb(55, 169, 55), 
+  "secondary": rgb(219, 15, 15),
+  "link": rgb(55, 169, 55) 
+);
+
+
+$link-color: map-get($theme-colors, "link");
+$primary-color: map-get($theme-colors, "primary");
+$secondary-color: map-get($theme-colors, "secondary");

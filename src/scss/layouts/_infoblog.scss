@@ -1,0 +1,87 @@
+@import "../abstracts/variables";
+
+
+.finalist__content {
+
+  margin-left: 20px;
+
+
+  &:hover {
+    background-color: oklch(from rgb(124, 255, 124) l c h / 0.8)
+  }
+}
+
+
+aside :is(ol, ul) {
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+
+.tabla,
+.leyenda {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.color-ninos,
+.color-adultos {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.color-ninos {
+  background-color: hsl(165, 38%, 63%);
+}
+
+.color-adultos {
+  background-color: #f76565;
+}
+
+
+
+
+.schedule :is(th, td) {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+
+td:has(.schedule__activities--kids) {
+  background-color: hsl(165, 38%, 63%);
+}
+
+td:has(.schedule__activities--adults) {
+  background-color: #f76565;
+}
+
+
+
+.carousel {
+  container: carousel/inline-size;
+}
+
+
+@container carousel (min-width: 300px) {
+  .carousel-item img {
+    width: calc(100% - 20px);
+    height: calc(40vw - 20px);
+    margin: 10px;
+    object-fit: cover;
+  }
+
+}
+
+.carousel-caption {
+  background-color: rgb(255, 255, 255, 0.8);
+}

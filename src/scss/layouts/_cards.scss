@@ -1,0 +1,26 @@
+
+.group-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    container: tarjeta/inline-size;
+    @include card-style;
+}
+
+@container tarjeta (min-width: 300px) {
+    .card h5 {
+        font-size: max(1em, 1.13em + 1.2cqw); 
+    }
+
+    .card p {
+        font-size: max(0.7em, 0.8em + 0.6cqw); 
+    }
+
+
+}
+
+
+
+
+
+
