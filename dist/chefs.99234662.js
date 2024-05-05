@@ -1,0 +1,1 @@
+var t;t=document.querySelectorAll(".needs-validation"),Array.prototype.slice.call(t).forEach(function(t){t.addEventListener("submit",function(a){t.checkValidity()||(a.preventDefault(),a.stopPropagation()),t.classList.add("was-validated")},!1)});
